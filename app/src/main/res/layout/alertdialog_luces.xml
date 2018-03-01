@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LUCES"
+        android:id="@+id/luces"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Carretera"
+        android:id="@+id/checkBox6"
+        android:layout_gravity="center_horizontal"
+        android:checked="true" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cruce"
+        android:id="@+id/checkBox7"
+        android:layout_gravity="center_horizontal"
+        android:checked="true" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Antiniebla"
+        android:id="@+id/checkBox8"
+        android:layout_gravity="center_horizontal"
+        android:checked="true" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intermitente"
+        android:id="@+id/checkBox9"
+        android:layout_gravity="center_horizontal"
+        android:checked="true" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direccionales"
+        android:id="@+id/checkBox10"
+        android:layout_gravity="center_horizontal"
+        android:checked="true" />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reversa"
+        android:id="@+id/checkBox11"
+        android:layout_gravity="center_horizontal"
+        android:checked="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR INFORMACION"
+        android:id="@+id/button10" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANCELAR"
+        android:id="@+id/button15" />
+</LinearLayout>

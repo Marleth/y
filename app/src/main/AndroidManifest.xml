@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gtm.itinerario">
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-library android:name="com.google.android.maps" />
+    <!-- Permiso para estado  del telefono -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Permiso para GPS,Maps -->
+    <permission
+        android:name="com.gtm.itinerario.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.gtm.itinerario.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.prividers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="com.sa.googlemap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Permiso para Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- camara permiso -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+
+
+    <meta-data
+        android:name="com.google.android.gms.vision.DEPENDENCIES"
+        android:value="barcode" />
+
+    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <!-- TODO replace above two with next line after Android 4.2 -->
+    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <!-- This excludes Google TV, which is unfortunately included by virtue of not requiring a camera -->
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <!-- 2 ejemplo -->
+    <meta-data
+        android:name="com.google.android.gms.vision.DEPENDENCIES"
+        android:value="barcode" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-library android:name="com.google.android.maps" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--Para solo una posicion
+                android:screenOrientation="portrait"
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".principalActivity"
+            android:label="@string/title_activity_principal"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".vehicularActivity"
+            android:label="@string/title_activity_vehicular"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DocActivity"
+            android:label="@string/title_activity_doc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".cargaActivity"
+            android:label="@string/title_activity_carga"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viaticosActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConductorActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NivelesActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".vehiculos"
+            android:label="@string/title_activity_vehiculos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LocalizacionActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HistorialActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".StreetView"
+            android:label="@string/title_activity_street_view"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Gastos"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Facturacion"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HGastos"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hfacturacion"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Datos_generales"
+            android:label="@string/title_activity_datos_generales"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Datos_geneerales_doc"
+            android:label="@string/title_activity_datos_geneerales_doc"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Datos_generales_vehi"
+            android:label="@string/title_activity_datos_generales_vehi"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Datos_viaticos"
+            android:label="@string/title_activity_datos_viaticos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Resultados"
+            android:label="@string/title_activity_resultados"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Reporte_General"
+            android:label="@string/title_activity_reporte__general"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".General_Gasto"
+            android:label="@string/title_activity_general__gasto"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Reporte_Facturacion"
+            android:label="@string/title_activity_reporte__facturacion"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <receiver
+            android:name=".Sync"
+            android:process=":remote" />
+
+        <service
+            android:name=".Servicio"
+            android:enabled="true"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

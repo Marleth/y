@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocalizacionActivity"
+    >
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:text=" "
+        android:id="@+id/tiempo"
+        android:layout_gravity="left|top"
+        android:textColor="#8B008B"
+        android:background="#E6E6FA"/>
+
+    <!--<ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pe"
+        android:src="@drawable/pegmanq"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left|bottom" />
+-->
+</FrameLayout>

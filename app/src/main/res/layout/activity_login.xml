@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#269501"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gtm.itinerario.LoginActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIENVENIDO"
+        android:id="@+id/textView44"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:textColor="#FFFF"/>
+
+    <ImageView
+        android:layout_width="216dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher1"
+        android:layout_weight="0.28" />
+
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageButton
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/imageButton11"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/login"
+                    android:background="@drawable/boton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entrar"
+                    android:id="@+id/textView45"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginStart="17dp"
+                    android:textColor="#FFFF"
+                    android:layout_centerVertical="true"
+                    android:layout_alignLeft="@+id/imageButton11"
+                    android:layout_alignStart="@+id/imageButton11" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView28"
+                android:layout_column="0" />
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:layout_width="250dp"
+                        android:layout_height="60dp"
+                        android:id="@+id/imageButton12"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/salir"
+                        android:background="@drawable/boton"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Salir"
+                        android:id="@+id/textView46"
+                        android:textSize="25sp"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginStart="21dp"
+                        android:textColor="#FFFF"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+
+                </RelativeLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+</LinearLayout>

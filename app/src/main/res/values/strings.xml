@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">Itinerario</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password </string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_salir">Salir</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="error_invalid_email">Correo inivalido</string>
+    <string name="error_invalid_password">El password es corto</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_principal">Inicio</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_vehicular"></string>
+    <string name="title_activity_doc"></string>
+    <string name="title_activity_carga">Revision de carga</string>
+    <string name="title_activity_viaticos">Viaticos</string>
+    <string name="nombre_transicion_imagen">Imagen compartida</string>
+    <string name="title_activity_diageneral">DiageneralActivity</string>
+    <string name="title_activity_spinner">spinner</string>
+    <string name="title_activity_vehiculos"> </string>
+    <string name="title_activity_ingresos">IngresosActivity</string>
+    <string name="title_activity_historial">HistorialActivity</string>
+    <string name="title_activity_localizacion">LocalizacionActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_first_screen">FirstScreen</string>
+    <string name="title_activity_secondscreen">secondscreen</string>
+    <string name="title_activity_third_screen">ThirdScreen</string>
+
+    <string name="str_tv_distance_time">Distance</string>
+
+    <string name="hello_world">Tap two locations in the map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fragmento">fragmento</string>
+    <string name="title_activity_fragment">fragment</string>
+    <string name="title_activity_fragment_map">fragment_map</string>
+    <string name="title_activity_map_demo">MapDemoActivity</string>
+    <string name="title_activity_street_view">StreetView</string>
+    <string name="scan">Scan</string>
+
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">OK</string>
+    <string name="zxing_msg_camera_framework_bug">Lo sentimos, la cámara de Android ha encontrado un problema. Es posible que necesite reiniciar el dispositivo.</string>
+    <string name="zxing_msg_default_status">Coloque un código de barras en el interior del rectángulo del visor para escanear.</string>
+    <string name="title_activity_capture">CaptureActivity</string>
+    <string name="title_activity_facturacion">Facturacion</string>
+    <string name="title_activity_hgastos">HGastos</string>
+    <string name="title_activity_hfacturacion">Hfacturacion</string>
+    <string name="title_activity_datos_generales"> </string>
+    <string name="title_activity_datos_geneerales_doc"> </string>
+    <string name="title_activity_datos_generales_vehi"> </string>
+    <string name="title_activity_datos_viaticos"> </string>
+    <string name="title_activity_resultados">Resultados</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_reporte__general">Reporte General</string>
+    <string name="title_activity_general__gasto">General_Gasto</string>
+    <string name="title_activity_reporte__facturacion">Reporte_Facturacion</string>
+
+
+</resources>

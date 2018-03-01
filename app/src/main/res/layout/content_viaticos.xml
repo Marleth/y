@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gtm.itinerario.viaticosActivity"
+    tools:showIn="@layout/app_bar_viaticos">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VIATICOS"
+                android:id="@+id/textView5"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/imbGasto"
+                    android:src="@drawable/factura"
+                    android:background="@drawable/edittext"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gasto"
+                    android:id="@+id/textView8"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textColor="#FFFF"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/imbFac"
+                    android:src="@drawable/gasto"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/deshabilitar"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Facturacion"
+                    android:id="@+id/factu"
+                    android:textSize="20sp"
+                    android:textColor="#FFFF"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:layout_width="140dp"
+                    android:layout_height="130dp"
+                    android:id="@+id/imbHis"
+                    android:src="@drawable/historia"
+                    android:background="@drawable/deshabilitar"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Historial"
+                    android:id="@+id/hist"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20sp"
+                    android:textColor="#FFFF"/>
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Guardar"
+                android:id="@+id/btviaticos"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

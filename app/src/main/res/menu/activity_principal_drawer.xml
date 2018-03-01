@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/documentacion"
+            android:icon="@drawable/approve_invoice"
+            android:title="Rev.de documentacion"
+            />
+        <item
+            android:id="@+id/vehiculos"
+            android:icon="@drawable/vehiculos_v"
+            android:title="Rev. vehicular"
+
+        />
+        <item
+            android:id="@+id/carga"
+            android:icon="@drawable/camion_de_reparto"
+            android:title="Rev. de carga"
+
+           />
+        <item
+            android:id="@+id/viaticos"
+            android:icon="@drawable/viaticos"
+            android:title="Viaticos"
+
+
+            />
+        <item
+            android:id="@+id/cerrar"
+            android:icon="@drawable/cerrar"
+            android:title="Cerrar sesion" />
+        <item
+            android:id="@+id/salir"
+            android:icon="@drawable/cerrar_1"
+            android:title="Salir" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="Herramientas">
+            <menu>
+                <item
+                    android:id="@+id/localizador"
+                    android:icon="@drawable/location"
+                    android:title="Localizador" />
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Mi cuenta">
+            <menu>
+                <item
+                    android:id="@+id/configuracin"
+                    android:icon="@drawable/ajustes"
+                    android:title="Configuración" />
+
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Ayuda">
+            <menu>
+                <item
+                    android:id="@+id/uso"
+                    android:title="¿Como usar la App?" />
+                <item
+                    android:id="@+id/condiciones"
+                    android:title="Terminos y condiciones" />
+                <item
+                    android:id="@+id/soporte"
+                    android:title="Soporte" />
+            </menu>
+        </item>
+    </group>
+
+</menu>

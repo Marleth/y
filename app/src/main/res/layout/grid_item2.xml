@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imagen_coche"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:transitionName="@string/nombre_transicion_imagen"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/nombre_coche"
+            android:layout_width="167dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:height="58dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignRight="@+id/imagen_coche"
+            android:layout_alignEnd="@+id/imagen_coche"
+            android:layout_alignBottom="@+id/imagen_coche"
+            android:layout_alignLeft="@+id/imagen_coche"
+            android:layout_alignStart="@+id/imagen_coche"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+</LinearLayout>

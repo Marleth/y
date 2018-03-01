@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/lbPointA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punto A" />
+
+    <EditText
+        android:id="@+id/textPointA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbPointA"
+        android:layout_below="@+id/lbPointA"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lbPointB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textPointA"
+        android:layout_below="@+id/textPointA"
+        android:layout_marginTop="17dp"
+        android:text="Punto B" />
+
+    <EditText
+        android:id="@+id/textPointB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbPointB"
+        android:layout_below="@+id/lbPointB"
+        android:layout_marginTop="17dp"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnCalcRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPointB"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="CALCULAR RUTA" />
+
+
+
+</LinearLayout>

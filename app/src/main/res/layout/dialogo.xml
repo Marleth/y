@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aceites"
+        android:id="@+id/switch4" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liquido de frenos"
+        android:id="@+id/switch5" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direccion hidraulica"
+        android:id="@+id/switch6" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Anticongelante"
+        android:id="@+id/switch7" />
+
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpiaparabrisas"
+        android:id="@+id/switch8" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:id="@+id/button2"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/button3"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
